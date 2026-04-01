@@ -3,11 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/home-meal-canvas/", // AJOUTE CETTE LIGNE
-  server: {
-    host: "0.0.0.0",
-    port: 8080,
-  },
+  base: "/home-meal-canvas/", // <--- TRÈS IMPORTANT : C'est le nom de ton dépôt
   plugins: [react()],
   resolve: {
     alias: {
