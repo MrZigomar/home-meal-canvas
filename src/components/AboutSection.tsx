@@ -1,4 +1,4 @@
-import { Leaf, Clock, Heart } from "lucide-react";
+import { Leaf, Clock, Heart, User } from "lucide-react";
 
 const features = [
   { icon: Leaf, title: "Produits frais", desc: "Des ingrédients de saison, locaux et de qualité" },
@@ -12,14 +12,22 @@ const AboutSection = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-accent mb-3 font-body">À propos</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-8">
             Qui suis-je ?
           </h2>
-          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            Passionnée de cuisine et de nutrition, j'ai créé mon service de batchcooking à domicile 
-            pour vous aider à retrouver le plaisir de bien manger au quotidien. Je viens chez vous 
-            avec les ingrédients, je cuisine, je range — et vous profitez de repas équilibrés toute la semaine.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-10 text-left">
+            {/* Photo placeholder — remplacez le src par votre photo */}
+            <div className="shrink-0 w-48 h-48 md:w-56 md:h-56 rounded-full bg-muted border-4 border-primary/20 flex items-center justify-center overflow-hidden">
+              {/* Décommentez la ligne ci-dessous et ajoutez votre photo :
+              <img src="/votre-photo.jpg" alt="Photo de profil" className="w-full h-full object-cover" /> */}
+              <User className="w-16 h-16 text-muted-foreground/50" />
+            </div>
+            <p className="font-body text-muted-foreground max-w-2xl text-lg leading-relaxed">
+              Passionnée de cuisine et de nutrition, j'ai créé mon service de batchcooking à domicile 
+              pour vous aider à retrouver le plaisir de bien manger au quotidien. Je viens chez vous 
+              avec les ingrédients, je cuisine, je range — et vous profitez de repas équilibrés toute la semaine.
+            </p>
+          </div>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((f) => (
