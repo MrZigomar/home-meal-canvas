@@ -1,7 +1,7 @@
 import { Leaf, Clock, Heart, User } from "lucide-react";
 
 const features = [
-  { icon: Leaf, title: "Produits frais", desc: "Des ingrédients de saison, locaux et de qualité" },
+  { icon: Leaf, title: "Produits sains", desc: "Des recettes de saison, des plats équilibrés" },
   { icon: Clock, title: "Gain de temps", desc: "Une semaine de repas préparés en une seule session" },
   { icon: Heart, title: "Fait maison", desc: "Cuisiné avec soin, directement dans votre cuisine" },
 ];
@@ -23,9 +23,10 @@ const AboutSection = () => {
               <User className="w-16 h-16 text-muted-foreground/50" />
             </div>
             <p className="font-body text-muted-foreground max-w-2xl text-lg leading-relaxed">
-              Passionnée de cuisine et de nutrition, j'ai créé mon service de batchcooking à domicile 
-              pour vous aider à retrouver le plaisir de bien manger au quotidien. Je viens chez vous 
-              avec les ingrédients, je cuisine, je range — et vous profitez de repas équilibrés toute la semaine.
+              Passionnée de cuisine depuis l'enfance, et baigné dans la culture culinaire italienne,
+              j'ai créé mon service de batchcooking à domicile pour vous aider à retrouver le plaisir de bien manger au quotidien. 
+              Je vous propose une sélection soignée de repas, prépare votre liste de courses puis viens chez vous pour cuisiner.
+              Après mon départ, vous retrouvez une cuisine propre, et profitez de repas équilibrés toute la semaine !
             </p>
           </div>
         </div>

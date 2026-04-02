@@ -2,24 +2,24 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Essentiel",
-    price: "120",
+    name: "Découverte",
+    price: "100",
     desc: "Idéal pour découvrir",
-    features: ["5 repas pour 2 personnes", "Courses incluses", "Recettes de saison", "Rangement cuisine"],
+    features: ["5 repas pour 2 personnes", "Menu composé par mes soins", "Rangement cuisine"],
     popular: false,
   },
   {
-    name: "Famille",
-    price: "190",
+    name: "Mensuelle",
+    price: "120",
     desc: "Le plus populaire",
-    features: ["5 repas pour 4 personnes", "Courses incluses", "Menu personnalisé", "Rangement cuisine", "Conseils nutrition"],
+    features: ["4 sessions programmées en avance", "5 repas pour 2 à 4 personnes", "Menu au choix", "Rangement cuisine"],
     popular: true,
   },
   {
-    name: "Premium",
-    price: "280",
-    desc: "Pour les gourmands",
-    features: ["7 repas pour 4 personnes", "Courses bio incluses", "Menu 100% sur mesure", "Rangement cuisine", "Desserts inclus", "Suivi hebdomadaire"],
+    name: "Hebdo",
+    price: "150",
+    desc: "Pour des sessions ponctuelles",
+    features: ["5 repas pour 2 à 4 personnes", "Menu au choix", "Rangement cuisine"],
     popular: false,
   },
 ];
@@ -58,7 +58,7 @@ const PricingSection = () => {
               </p>
               <div className="my-6">
                 <span className="font-display text-5xl font-bold">{plan.price}</span>
-                <span className={`font-body text-sm ml-1 ${plan.popular ? "text-primary-foreground/70" : "text-muted-foreground"}`}>€ / session</span>
+                <span className={`font-body text-sm ml-1 ${plan.popular ? "text-primary-foreground/70" : "text-muted-foreground"}`}>€ / session avant réduction d'impôts</span>
               </div>
               <ul className="space-y-3 flex-1 mb-8">
                 {plan.features.map((f) => (

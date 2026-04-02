@@ -18,7 +18,7 @@ const ContactSection = () => {
             <Mail className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Email</p>
-              <p className="font-body font-bold">bonjour@monbatchcooking.fr</p>
+              <p className="font-body font-bold">julien@poivreetsel.kitchen</p>
             </div>
           </a>
           <a href="tel:+33612345678" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
@@ -32,14 +32,14 @@ const ContactSection = () => {
             <MapPin className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Zone</p>
-              <p className="font-body font-bold">Paris & Île-de-France</p>
+              <p className="font-body font-bold">Combourg / Dinan / Saint-Malo</p>
             </div>
           </div>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
             <Instagram className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Instagram</p>
-              <p className="font-body font-bold">@monbatchcooking</p>
+              <p className="font-body font-bold">@poivreetsel.kitchen</p>
             </div>
           </a>
         </div>

@@ -18,12 +18,12 @@ const HeroSection = () => {
           Batchcooking à domicile
         </p>
         <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-          Mangez bien,<br />
+          Bien manger,<br />
           <span className="italic font-normal">sans effort</span>
         </h1>
         <p className="font-body text-lg text-primary-foreground/90 mb-10 max-w-xl mx-auto leading-relaxed">
           Je prépare chez vous une semaine de repas sains, savoureux et faits maison. 
-          Gagnez du temps, mangez mieux.
+          Gagnez du temps, mangez sainement.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
