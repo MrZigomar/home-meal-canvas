@@ -19,7 +19,7 @@ const AboutSection = () => {
             {/* Photo placeholder — remplacez le src par votre photo */}
             <div className="shrink-0 w-48 h-48 md:w-56 md:h-56 rounded-full bg-muted border-4 border-primary/20 flex items-center justify-center overflow-hidden">
               {/* Décommentez la ligne ci-dessous et ajoutez votre photo :*/}
-              <img src="/julien.HEIC" alt="Photo de profil" className="w-full h-full object-cover" /> 
+              <img src="/julien.jpg" alt="Photo de profil" className="w-full h-full object-cover" /> 
               <User className="w-16 h-16 text-muted-foreground/50" />
             </div>
             <p className="font-body text-muted-foreground max-w-2xl text-lg leading-relaxed">
