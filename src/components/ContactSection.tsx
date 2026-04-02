@@ -2,7 +2,7 @@ import { Mail, MessageCircle, MapPin, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   const handleWhatsApp = () => {
-    const num = ["33", "6", "12", "34", "56", "78"].join("");
+    const num = ["33", "6", "95", "38", "54", "67"].join("");
     window.open(`https://wa.me/${num}`, "_blank");
   };
 
