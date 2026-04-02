@@ -27,20 +27,24 @@ import boeufMijote from "@/assets/recipes/boeuf-mijote.jpg";
 import saladeQuinoa from "@/assets/recipes/salade-quinoa.jpg";
 import soupeButternut from "@/assets/recipes/soupe-butternut.jpg";
 
+export type Season = "Printemps" | "Été" | "Automne" | "Hiver";
+
 export interface Recipe {
   name: string;
   category: string;
-  time: string;
+  seasons: Season[];
   portions: string;
   image: string;
   color: string;
 }
 
+export const allSeasons: Season[] = ["Printemps", "Été", "Automne", "Hiver"];
+
 export const recipes: Recipe[] = [
   {
     name: "Poulet rôti aux herbes & légumes de saison",
     category: "Plat principal",
-    time: "45 min",
+    seasons: ["Automne", "Hiver"],
     portions: "4",
     image: pouletRoti,
     color: "bg-primary",
@@ -48,7 +52,7 @@ export const recipes: Recipe[] = [
   {
     name: "Curry de lentilles corail & lait de coco",
     category: "Végétarien",
-    time: "35 min",
+    seasons: ["Automne", "Hiver"],
     portions: "4",
     image: curryLentilles,
     color: "bg-accent",
@@ -56,7 +60,7 @@ export const recipes: Recipe[] = [
   {
     name: "Gratin de courgettes au chèvre frais",
     category: "Végétarien",
-    time: "40 min",
+    seasons: ["Été", "Automne"],
     portions: "4",
     image: gratinCourgettes,
     color: "bg-primary",
@@ -64,7 +68,7 @@ export const recipes: Recipe[] = [
   {
     name: "Bœuf mijoté aux carottes & pommes de terre",
     category: "Plat principal",
-    time: "1h30",
+    seasons: ["Automne", "Hiver"],
     portions: "6",
     image: boeufMijote,
     color: "bg-accent",
@@ -72,7 +76,7 @@ export const recipes: Recipe[] = [
   {
     name: "Salade de quinoa, avocat & saumon fumé",
     category: "Entrée",
-    time: "20 min",
+    seasons: ["Printemps", "Été"],
     portions: "4",
     image: saladeQuinoa,
     color: "bg-primary",
@@ -80,7 +84,7 @@ export const recipes: Recipe[] = [
   {
     name: "Soupe veloutée de butternut & noisettes",
     category: "Entrée",
-    time: "30 min",
+    seasons: ["Automne", "Hiver"],
     portions: "4",
     image: soupeButternut,
     color: "bg-accent",
