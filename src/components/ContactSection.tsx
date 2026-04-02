@@ -1,6 +1,11 @@
-import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Mail, MessageCircle, MapPin, Instagram } from "lucide-react";
 
 const ContactSection = () => {
+  const handleWhatsApp = () => {
+    const num = ["33", "6", "12", "34", "56", "78"].join("");
+    window.open(`https://wa.me/${num}`, "_blank");
+  };
+
   return (
     <section id="contact" className="py-24 px-6 bg-primary text-primary-foreground">
       <div className="max-w-4xl mx-auto">
@@ -14,20 +19,20 @@ const ContactSection = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <a href="mailto:bonjour@monbatchcooking.fr" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+          <a href="mailto:julien@poivreetsel.kitchen" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
             <Mail className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Email</p>
               <p className="font-body font-bold">julien@poivreetsel.kitchen</p>
             </div>
           </a>
-          <a href="tel:+33612345678" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
-            <Phone className="w-6 h-6 shrink-0" />
+          <button onClick={handleWhatsApp} className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors text-left">
+            <MessageCircle className="w-6 h-6 shrink-0" />
             <div>
-              <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Téléphone</p>
-              <p className="font-body font-bold">06 12 34 56 78</p>
+              <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">WhatsApp</p>
+              <p className="font-body font-bold">Discutons ensemble</p>
             </div>
-          </a>
+          </button>
           <div className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10">
             <MapPin className="w-6 h-6 shrink-0" />
             <div>
@@ -35,7 +40,7 @@ const ContactSection = () => {
               <p className="font-body font-bold">Combourg / Dinan / Saint-Malo</p>
             </div>
           </div>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+          <a href="https://instagram.com/poivreetsel.kitchen" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
             <Instagram className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Instagram</p>
