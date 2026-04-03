@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Users, ChevronDown, Leaf } from "lucide-react";
-import { recipes, allSeasons, type Season } from "@/data/recipes";
+import { recipes, allSeasons, allCategories, type Season, type Category } from "@/data/recipes";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -9,17 +9,12 @@ const INITIAL_COUNT = 6;
 const RecipesSection = () => {
   const [showAll, setShowAll] = useState(false);
   const [selectedSeason, setSelectedSeason] = useState<Season | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
-  const categories = useMemo(
-    () => [...new Set(recipes.map((r) => r.category))],
-    []
-  );
+  const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const filtered = useMemo(() => {
     return recipes.filter((r) => {
       if (selectedSeason && !r.seasons.includes(selectedSeason)) return false;
-      if (selectedCategory && r.category !== selectedCategory) return false;
+      if (selectedCategory && !r.categories.includes(selectedCategory)) return false;
       return true;
     });
   }, [selectedSeason, selectedCategory]);
@@ -59,9 +54,7 @@ const RecipesSection = () => {
             {allSeasons.map((s) => (
               <button
                 key={s}
-                onClick={() =>
-                  setSelectedSeason(selectedSeason === s ? null : s)
-                }
+                onClick={() => setSelectedSeason(selectedSeason === s ? null : s)}
                 className={`px-4 py-1.5 rounded-full text-sm font-body transition-colors border ${
                   selectedSeason === s
                     ? "bg-primary text-primary-foreground border-primary"
@@ -84,12 +77,10 @@ const RecipesSection = () => {
             >
               Tous types
             </button>
-            {categories.map((c) => (
+            {allCategories.map((c) => (
               <button
                 key={c}
-                onClick={() =>
-                  setSelectedCategory(selectedCategory === c ? null : c)
-                }
+                onClick={() => setSelectedCategory(selectedCategory === c ? null : c)}
                 className={`px-4 py-1.5 rounded-full text-sm font-body transition-colors border ${
                   selectedCategory === c
                     ? "bg-accent text-accent-foreground border-accent"
@@ -118,9 +109,16 @@ const RecipesSection = () => {
                   height={512}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="absolute top-3 left-3 bg-background/90 backdrop-blur-sm text-xs tracking-widest uppercase text-accent font-body font-bold px-3 py-1 rounded-full">
-                  {r.category}
-                </span>
+                <div className="absolute top-3 left-3 flex flex-wrap gap-1">
+                  {r.categories.map((c) => (
+                    <span
+                      key={c}
+                      className="bg-background/90 backdrop-blur-sm text-xs tracking-widest uppercase text-accent font-body font-bold px-3 py-1 rounded-full"
+                    >
+                      {c}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
