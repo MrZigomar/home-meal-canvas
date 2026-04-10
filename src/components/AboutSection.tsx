@@ -18,7 +18,7 @@ const AboutSection = () => {
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-10 text-left">
             {/* Photo placeholder — remplacez le src par votre photo */}
-            <div className="shrink-0 w-72 h-72 md:w-56 md:h-56 rounded-full bg-muted border-4 border-primary/20 flex items-center justify-center overflow-hidden">
+            <div className="shrink-0 w-[22.5rem] h-[22.5rem] md:w-[17.5rem] md:h-[17.5rem] rounded-full bg-muted border-4 border-primary/20 flex items-center justify-center overflow-hidden">
               {/* Décommentez la ligne ci-dessous et ajoutez votre photo :*/}
               <img src={julienPhoto} alt="Photo de profil" className="w-full h-full object-cover" />
               {/*<User className="w-16 h-16 text-muted-foreground/50" />*/}
