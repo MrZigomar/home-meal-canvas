@@ -37,7 +37,7 @@ const ContactSection = () => {
             <MapPin className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Zone</p>
-              <p className="font-body font-bold">Combourg / Dinan / Saint-Malo</p>
+              <p className="font-body font-bold">Combourg / Dinan / Rennes / Saint-Malo</p>
             </div>
           </div>
           <a href="https://instagram.com/poivreetsel.kitchen" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
