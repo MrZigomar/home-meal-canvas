@@ -12,11 +12,13 @@ const RecipesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const filtered = useMemo(() => {
-    return recipes.filter((r) => {
-      if (selectedSeason && !r.seasons.includes(selectedSeason)) return false;
-      if (selectedCategory && !r.categories.includes(selectedCategory)) return false;
-      return true;
-    });
+    return recipes
+      .filter((r) => {
+        if (selectedSeason && !r.seasons.includes(selectedSeason)) return false;
+        if (selectedCategory && !r.categories.includes(selectedCategory)) return false;
+        return true;
+      })
+      .sort((a, b) => a.name.localeCompare(b.name, "fr"));
   }, [selectedSeason, selectedCategory]);
 
   const displayed = showAll ? filtered : filtered.slice(0, INITIAL_COUNT);
@@ -135,11 +137,6 @@ const RecipesSection = () => {
                       {s}
                     </Badge>
                   ))}
-                </div>
-                <div className="flex gap-4 text-muted-foreground text-sm font-body">
-                  <span className="flex items-center gap-1.5">
-                    <Users className="w-4 h-4" /> {r.portions} pers.
-                  </span>
                 </div>
               </div>
             </div>

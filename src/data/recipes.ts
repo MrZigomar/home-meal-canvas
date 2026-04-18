@@ -2,7 +2,6 @@ import spaghettisNerano from "@/assets/recipes/spaghettis-nerano.jpg";
 import bowlCrevettes from "@/assets/recipes/bowl-crevettes-teriyaki.jpg";
 import tatinTomates from "@/assets/recipes/tatin-tomates-cerises.jpg";
 import croqueMonsieur from "@/assets/recipes/croque-monsieur.jpg";
-import gnocchiBrocolis from "@/assets/recipes/gnocchi-brocolis-jambon.jpg";
 import gaspachoRoules from "@/assets/recipes/gaspacho-roules-genovesi.jpg";
 import saucissesLentilles from "@/assets/recipes/saucisses-lentilles.jpg";
 import chakchouka from "@/assets/recipes/chakchouka-feta-pois-chiches.jpg";
@@ -13,6 +12,12 @@ import dahlCoco from "@/assets/recipes/dahl-coco-epinards.jpg";
 import hachisParmentier from "@/assets/recipes/hachis-parmentier.jpg";
 import quicheSaumon from "@/assets/recipes/quiche-saumon-epinards.jpg";
 import gaspachoPoivre from "@/assets/recipes/gaspacho-petits-pois-menthe.jpg";
+import pastaPatate from "@/assets/recipes/pasta-patate.jpg"
+import cannelloniRicotta from "@/assets/recipes/cannelloni-ricotta.jpg"
+import polentaSaucisses from "@/assets/recipes/polenta-saucisse.jpg"
+import auberginesParmigiana from "@/assets/recipes/parmigiana-aubergine.jpg"
+import quicheLorraine from "@/assets/recipes/quiche-lorraine.jpg"
+import galetteAsperges from "@/assets/recipes/galette-asperges.jpg"
 
 export type Season = "Printemps" | "Été" | "Automne" | "Hiver";
 export type Category = "Quiche / Tarte" | "Végan" | "Végétarien" | "Poisson" | "Viande";
@@ -63,20 +68,12 @@ export const recipes: Recipe[] = [
     color: "bg-accent",
   },
   {
-    name: "Gnocchi sauce Brocolis & Jambon",
-    categories: ["Viande", "Végétarien"],
-    seasons: ["Été", "Automne"],
-    portions: "4",
-    image: gnocchiBrocolis,
-    color: "bg-primary",
-  },
-  {
     name: "Gaspacho et Roulés Genovesi",
     categories: ["Végétarien", "Viande"],
     seasons: ["Été"],
     portions: "4",
     image: gaspachoRoules,
-    color: "bg-accent",
+    color: "bg-primary",
   },
   {
     name: "Saucisses aux Lentilles",
@@ -84,15 +81,15 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: saucissesLentilles,
-    color: "bg-primary",
+    color: "bg-accent",
   },
   {
     name: "Chakchouka Feta & Pois Chiches",
-    categories: ["Viande", "Végétarien"],
+    categories: ["Végétarien", "Viande"],
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: chakchouka,
-    color: "bg-accent",
+    color: "bg-primary",
   },
   {
     name: "Aubergines Farcies",
@@ -100,7 +97,7 @@ export const recipes: Recipe[] = [
     seasons: ["Été"],
     portions: "4",
     image: auberginesFarcies,
-    color: "bg-primary",
+    color: "bg-accent",
   },
   {
     name: "Pasta alla Carbonara",
@@ -108,7 +105,7 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: carbonara,
-    color: "bg-accent",
+    color: "bg-primary",
   },
   {
     name: "Quiche aux Poireaux, Chèvre et Lardons",
@@ -116,7 +113,7 @@ export const recipes: Recipe[] = [
     seasons: ["Hiver"],
     portions: "4",
     image: quichePoireaux,
-    color: "bg-primary",
+    color: "bg-accent",
   },
   {
     name: "Dahl Coco Épinards",
@@ -124,7 +121,7 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: dahlCoco,
-    color: "bg-accent",
+    color: "bg-primary",
   },
   {
     name: "Hachis Parmentier",
@@ -132,7 +129,7 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: hachisParmentier,
-    color: "bg-primary",
+    color: "bg-accent",
   },
   {
     name: "Quiche au Saumon et aux Épinards",
@@ -140,7 +137,7 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
     image: quicheSaumon,
-    color: "bg-accent",
+    color: "bg-primary",
   },
   {
     name: "Gaspacho de Petits Pois à la Menthe",
@@ -148,6 +145,54 @@ export const recipes: Recipe[] = [
     seasons: ["Printemps", "Été"],
     portions: "4",
     image: gaspachoPoivre,
+    color: "bg-accent",
+  },
+  {
+    name: "Pasta e Patate",
+    categories: ["Viande", "Végétarien"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
+    portions: "4",
+    image: pastaPatate,
     color: "bg-primary",
+  },
+  {
+    name: "Cannelloni Ricotta et Épinards",
+    categories: ["Végétarien"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
+    portions: "4",
+    image: cannelloniRicotta,
+    color: "bg-accent",
+  },
+  {
+    name: "Polenta à la Sauce Tomate et Saucisses",
+    categories: ["Viande"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
+    portions: "4",
+    image: polentaSaucisses,
+    color: "bg-primary",
+  },
+  {
+    name: "Aubergines alla Parmigiana",
+    categories: ["Végétarien"],
+    seasons: ["Été"],
+    portions: "4",
+    image: auberginesParmigiana,
+    color: "bg-accent",
+  },
+  {
+    name: "Quiche Lorraine",
+    categories: ["Quiche / Tarte", "Viande"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
+    portions: "4",
+    image: quicheLorraine,
+    color: "bg-primary",
+  },
+  {
+    name: "Galette aux Asperges et à la Ricotta",
+    categories: ["Quiche / Tarte", "Végétarien"],
+    seasons: ["Printemps"],
+    portions: "4",
+    image: galetteAsperges,
+    color: "bg-accent",
   },
 ];
