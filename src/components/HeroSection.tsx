@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-batchcooking.jpg";
 import sapLogo from "@/assets/sap-logo.png";
+import urssafLogo from "@/assets/urssaf-logo.jpg";
 
 const HeroSection = () => {
   return (
@@ -40,13 +41,20 @@ const HeroSection = () => {
             Me contacter
           </a>
         </div>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex justify-center items-center gap-8">
           <img
             src={sapLogo}
             alt="Logo Service à la Personne agréé"
             width={200}
             height={200}
             loading="lazy"
+          />
+          <img
+            src={urssafLogo}
+            alt="Logo Urssaf - Au service de notre protection sociale"
+            height={200}
+            loading="lazy"
+            className="h-[200px] w-auto bg-white p-4 rounded-sm"
           />
         </div>
       </div>
