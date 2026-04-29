@@ -68,16 +68,16 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#contact"
-                className={`block text-center py-3 px-6 rounded-sm text-sm font-body tracking-widest uppercase transition-colors ${
+              <button
+                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                className={`block w-full text-center py-3 px-6 rounded-sm text-sm font-body tracking-widest uppercase transition-colors ${
                   plan.popular
                     ? "bg-accent text-accent-foreground hover:opacity-90"
-                    : "bg-primary text-primary-foreground hover:opacity-90"
+                   : "bg-primary text-primary-foreground hover:opacity-90"
                 }`}
               >
                 Réserver
-              </a>
+              </button>
             </div>
           ))}
         </div>
