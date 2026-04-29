@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const TRUSTMARY_SRC = "https://widget.trustmary.com/vHMJ-6cRT";
+const TRUSTMARY_SRC = "https://widget.trustmary.com/ABlPC9phT";
 
 const TestimonialsSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
