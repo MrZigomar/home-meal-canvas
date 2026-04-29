@@ -2,9 +2,9 @@ import { Leaf, Clock, Heart, User } from "lucide-react";
 import julienPhoto from '@/assets/julien.jpg';
 
 const features = [
-  { icon: Leaf, title: "Produits sains", desc: "Des recettes de saison, des plats équilibrés, le tout fait maison !" },
-  { icon: Clock, title: "Gain de temps", desc: "Une semaine de repas préparés en une seule session" },
-  { icon: Heart, title: "Abordable", desc: "Prestations éligibles à un crédit d'impôts de 50% SAP" },
+  { icon: Leaf, title: "Produits sains", desc: "Je vous propose une selection de recettes de saison, équilibrées, que je cuisine chez vous. Dites adieu aux produits ultra transformés !" },
+  { icon: Clock, title: "Gain de temps", desc: "Je vous prépare la liste détaillée de vos courses. Une fois chez vous, je prépare tous vos repas de la semaine. Après mon départ, vous retrouvez votre frigo rempli, une cuisine propre, ainsi qu'une note détaillée du menu de la semaine avec les instructions de conservation et de préparation !" },
+  { icon: Heart, title: "Abordable", desc: "Mes prestations sont éligibles à un crédit d'impôts immédiat de 50% Service À la Personne." },
 ];
 
 const AboutSection = () => {
