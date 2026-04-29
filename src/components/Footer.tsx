@@ -6,10 +6,9 @@ const Footer = () => (
       <img
         src={sapLogo}
         alt="Logo Service à la Personne agréé"
-        width={80}
-        height={80}
+        width={100}
+        height={100}
         loading="lazy"
-        className="w-20 h-20 rounded-full bg-primary-foreground/90 p-2"
       />
     </div>
     <p>© {new Date().getFullYear()} Poivre & Sel — Batchcooking à domicile. Tous droits réservés.</p>

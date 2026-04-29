@@ -44,10 +44,9 @@ const HeroSection = () => {
           <img
             src={sapLogo}
             alt="Logo Service à la Personne agréé"
-            width={96}
-            height={96}
+            width={200}
+            height={200}
             loading="lazy"
-            className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary-foreground/90 p-2 shadow-lg"
           />
         </div>
       </div>
