@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-batchcooking.jpg";
 import sapLogo from "@/assets/sap-logo.png";
+import urssafLogo from "@/assets/urssaf-logo.jpg";
 
 const HeroSection = () => {
   return (
