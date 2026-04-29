@@ -41,20 +41,20 @@ const HeroSection = () => {
             Me contacter
           </a>
         </div>
-        <div className="mt-10 flex justify-center items-center gap-8">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8">
           <img
             src={sapLogo}
             alt="Logo Service à la Personne agréé"
             width={200}
             height={200}
             loading="lazy"
+            className="w-[200px] h-auto"
           />
           <img
             src={urssafLogo}
             alt="Logo Urssaf - Au service de notre protection sociale"
-            height={200}
             loading="lazy"
-            className="h-[200px] w-auto bg-white p-4 rounded-sm"
+            className="w-[200px] h-auto bg-white p-4 rounded-sm"
           />
         </div>
       </div>
