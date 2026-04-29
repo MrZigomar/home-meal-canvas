@@ -24,7 +24,7 @@ const Footer = () => (
         Infos pratiques
       </p>
       <a
-        href="/avance-immediate"
+        href="/#/avance-immediate"
         className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4 transition-colors"
       >
         L'Avance immédiate de crédit d'impôt
