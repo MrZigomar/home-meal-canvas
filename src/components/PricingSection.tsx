@@ -5,7 +5,7 @@ const plans = [
     name: "Découverte",
     price: "100",
     desc: "Idéal pour découvrir",
-    features: ["5 repas pour 2 personnes", "Menu composé par mes soins", "Rangement cuisine"],
+    features: ["3 repas pour 4 personnes", "Menu composé par mes soins", "Rangement cuisine"],
     popular: false,
   },
   {
