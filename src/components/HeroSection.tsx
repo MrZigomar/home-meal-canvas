@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-batchcooking.jpg";
+import sapLogo from "@/assets/sap-logo.png";
 
 const HeroSection = () => {
   return (
@@ -38,6 +39,16 @@ const HeroSection = () => {
           >
             Me contacter
           </a>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <img
+            src={sapLogo}
+            alt="Logo Service à la Personne agréé"
+            width={96}
+            height={96}
+            loading="lazy"
+            className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary-foreground/90 p-2 shadow-lg"
+          />
         </div>
       </div>
     </section>
