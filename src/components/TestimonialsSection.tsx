@@ -1,22 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const TRUSTMARY_SRC = "https://widget.trustmary.com/vHMJ-6cRT";
 
 const TestimonialsSection = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    if (!containerRef.current) return;
-
-    // Évite les doublons en cas de re-render
-    if (containerRef.current.querySelector(`script[src="${TRUSTMARY_SRC}"]`)) {
-      return;
-    }
+    if (document.querySelector(`script[src="${TRUSTMARY_SRC}"]`)) return;
 
     const script = document.createElement("script");
     script.src = TRUSTMARY_SRC;
     script.async = true;
-    containerRef.current.appendChild(script);
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -30,7 +27,7 @@ const TestimonialsSection = () => {
             Ce que disent mes clients
           </h2>
         </div>
-        <div ref={containerRef} className="trustmary-widget" />
+        <div className="trustmary-widget" />
       </div>
     </section>
   );
