@@ -28,18 +28,18 @@ const HeroSection = () => {
           Gagnez du temps, mangez sainement.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#tarifs"
+          <button
+            onClick={() => document.getElementById("tarifs")?.scrollIntoView({ behavior: "smooth" })}
             className="inline-block bg-accent text-accent-foreground px-8 py-4 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity rounded-sm"
           >
             Découvrir les formules
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="inline-block border border-primary-foreground/50 text-primary-foreground px-8 py-4 font-body text-sm tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors rounded-sm"
           >
             Me contacter
-          </a>
+          </button>
         </div>
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8">
           <img
