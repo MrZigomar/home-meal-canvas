@@ -3,20 +3,20 @@ import urssafLogo from "@/assets/urssaf-logo.jpg";
 
 const Footer = () => (
   <footer className="py-10 px-6 bg-foreground text-primary-foreground/60 text-center font-body text-sm">
-    <div className="flex justify-center items-center gap-6 mb-6">
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-6">
       <img
         src={sapLogo}
         alt="Logo Service à la Personne agréé"
         width={100}
         height={100}
         loading="lazy"
+        className="w-[100px] h-auto"
       />
       <img
         src={urssafLogo}
         alt="Logo Urssaf - Au service de notre protection sociale"
-        height={100}
         loading="lazy"
-        className="h-[100px] w-auto bg-white p-2 rounded-sm"
+        className="w-[100px] h-auto bg-white p-2 rounded-sm"
       />
     </div>
     <nav aria-label="Infos pratiques" className="mb-4">
