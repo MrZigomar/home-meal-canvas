@@ -1,6 +1,5 @@
 import heroImage from "@/assets/hero-batchcooking.jpg";
 import sapLogo from "@/assets/sap-logo.png";
-import urssafLogo from "@/assets/urssaf-logo.jpg";
 
 const HeroSection = () => {
   return (
@@ -49,12 +48,6 @@ const HeroSection = () => {
             height={200}
             loading="lazy"
             className="w-[200px] h-auto"
-          />
-          <img
-            src={urssafLogo}
-            alt="Logo Urssaf - Au service de notre protection sociale"
-            loading="lazy"
-            className="w-[200px] h-auto bg-white p-4 rounded-sm"
           />
         </div>
       </div>
