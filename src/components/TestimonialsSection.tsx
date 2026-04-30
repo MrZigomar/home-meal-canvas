@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 
 const API_KEY = "AIzaSyCun_7lFqFg00AWXQnh329vPHk-0elNw2o";
-const PLACE_ID = "ChIJ1-nnRsD-KUgRW0suJP_lVT4";
+const PLACE_ID = "ChIJ1-nnRsCQlU8R20suJP8O9V4";
 
 type GoogleReview = {
   name?: string;
