@@ -15,9 +15,10 @@ import gaspachoPoivre from "@/assets/recipes/gaspacho-petits-pois-menthe.jpg";
 import pastaPatate from "@/assets/recipes/pasta-patate.jpg"
 import cannelloniRicotta from "@/assets/recipes/cannelloni-ricotta.jpg"
 import polentaSaucisses from "@/assets/recipes/polenta-saucisse.jpg"
-import auberginesParmigiana from "@/assets/recipes/parmigiana-aubergine.jpg"
+import butterChicken from "@/assets/recipes/butter-chicken.jpg"
 import quicheLorraine from "@/assets/recipes/quiche-lorraine.jpg"
 import galetteAsperges from "@/assets/recipes/galette-asperges.jpg"
+import pouletCrousty from "@/assets/recipes/poulet-crousty.jpg"
 
 export type Season = "Printemps" | "Été" | "Automne" | "Hiver";
 export type Category = "Quiche / Tarte" | "Végan" | "Végétarien" | "Poisson" | "Viande";
@@ -172,11 +173,11 @@ export const recipes: Recipe[] = [
     color: "bg-primary",
   },
   {
-    name: "Aubergines alla Parmigiana",
-    categories: ["Végétarien"],
-    seasons: ["Été"],
+    name: "Butter Chicken",
+    categories: ["Viande"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
     portions: "4",
-    image: auberginesParmigiana,
+    image: butterChicken,
     color: "bg-accent",
   },
   {
@@ -194,5 +195,13 @@ export const recipes: Recipe[] = [
     portions: "4",
     image: galetteAsperges,
     color: "bg-accent",
+  },
+  {
+    name: "Poulet Crousty",
+    categories: ["Viande"],
+    seasons: ["Printemps", "Été", "Automne", "Hiver"],
+    portions: "4",
+    image: pouletCrousty,
+    color: "bg-primary",
   },
 ];
