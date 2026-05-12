@@ -1,9 +1,19 @@
 import { Mail, MessageCircle, MapPin, Instagram } from "lucide-react";
+import { sendCapiEvent } from "../utils/capi";
 
 const ContactSection = () => {
   const handleWhatsApp = () => {
+    sendCapiEvent("Lead");
     const num = ["33", "6", "95", "38", "54", "67"].join("");
     window.open(`https://wa.me/${num}`, "_blank");
+  };
+
+  const handleEmail = () => {
+    sendCapiEvent("Lead");
+  };
+
+  const handleInstagram = () => {
+    sendCapiEvent("Lead");
   };
 
   return (
@@ -19,7 +29,11 @@ const ContactSection = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <a href="mailto:julien@poivreetsel.kitchen" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+          
+            href="mailto:julien@poivreetsel.kitchen"
+            onClick={handleEmail}
+            className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors"
+          >
             <Mail className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Email</p>
@@ -40,7 +54,13 @@ const ContactSection = () => {
               <p className="font-body font-bold">Combourg / Dinan / Rennes / Saint-Malo</p>
             </div>
           </div>
-          <a href="https://instagram.com/poivreetsel.kitchen" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+          
+            href="https://instagram.com/poivreetsel.kitchen"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleInstagram}
+            className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors"
+          >
             <Instagram className="w-6 h-6 shrink-0" />
             <div>
               <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Instagram</p>

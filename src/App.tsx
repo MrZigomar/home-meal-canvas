@@ -7,6 +7,8 @@ import Index from "./pages/Index.tsx";
 import AvanceImmediate from "./pages/AvanceImmediate.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import { useEffect } from "react";
+import { sendCapiEvent } from "./utils/capi";
 
 const queryClient = new QueryClient();
 
@@ -27,5 +29,10 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
+
+function App() {
+  useEffect(() => {
+    sendCapiEvent("PageView");
+  }, []);
 
 export default App;
