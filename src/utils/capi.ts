@@ -1,4 +1,4 @@
-const WORKER_URL = "https://meta-capi.guerinot-julien.workers.dev";
+const WORKER_URL = "https://api.poivreetsel.kitchen";
 
 function getCookie(name: string): string | null {
   const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
