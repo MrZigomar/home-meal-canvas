@@ -69,8 +69,11 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              <a
+                href="https://forms.gle/Q3fgtHx1hjQD2bLN8"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => sendCapiEvent("Lead")}
                 className={`block w-full text-center py-3 px-6 rounded-sm text-sm font-body tracking-widest uppercase transition-colors ${
                   plan.popular
                     ? "bg-accent text-accent-foreground hover:opacity-90"
@@ -78,7 +81,7 @@ const PricingSection = () => {
                 }`}
               >
                 Réserver
-              </button>
+              </a>
             </div>
           ))}
         </div>
