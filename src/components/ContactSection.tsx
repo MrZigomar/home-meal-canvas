@@ -27,11 +27,11 @@ const ContactSection = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <a href="mailto:julien@poivreetsel.kitchen" onClick={handleEmail} className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+          <a href="https://forms.gle/Q3fgtHx1hjQD2bLN8" target="_blank" rel="noopener noreferrer" onClick={handleEmail} className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
             <Mail className="w-6 h-6 shrink-0" />
             <div>
-              <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Email</p>
-              <p className="font-body font-bold">julien@poivreetsel.kitchen</p>
+              <p className="font-body text-xs uppercase tracking-widest text-primary-foreground/60">Contact</p>
+              <p className="font-body font-bold">Me contacter</p>
             </div>
           </a>
           <button onClick={handleWhatsApp} className="flex items-center gap-4 p-6 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors text-left">

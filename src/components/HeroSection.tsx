@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-batchcooking.jpg";
 import sapLogo from "@/assets/sap-logo.png";
+import { sendCapiEvent } from "../utils/capi";
 
 const HeroSection = () => {
   return (
@@ -33,12 +34,15 @@ const HeroSection = () => {
           >
             Découvrir les formules
           </button>
-          <button
-            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+          <a
+            href="https://forms.gle/Q3fgtHx1hjQD2bLN8"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => sendCapiEvent("Lead")}
             className="inline-block border border-primary-foreground/50 text-primary-foreground px-8 py-4 font-body text-sm tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors rounded-sm"
           >
             Me contacter
-          </button>
+          </a>
         </div>
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8">
           <img
