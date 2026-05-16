@@ -38,6 +38,7 @@ const HeroSection = () => {
             href="https://forms.gle/Q3fgtHx1hjQD2bLN8"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendCapiEvent("Lead")}
             className="inline-block border border-primary-foreground/50 text-primary-foreground px-8 py-4 font-body text-sm tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors rounded-sm"
           >
             Me contacter
