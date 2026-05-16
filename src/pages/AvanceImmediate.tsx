@@ -33,6 +33,15 @@ const steps = [
 ];
 
 const AvanceImmediate = () => {
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag("event", "page_view", {
+        page_title: "Avance immédiate",
+        page_location: window.location.href,
+      });
+    }
+  }, []);
+
   return (
     <>
       <Navbar />
