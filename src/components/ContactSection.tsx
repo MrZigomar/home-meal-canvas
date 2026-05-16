@@ -2,17 +2,7 @@ import { Mail, MessageCircle, MapPin, Instagram } from "lucide-react";
 import { sendCapiEvent } from "../utils/capi";
 
 const ContactSection = () => {
-  const handleWhatsApp = () => {
-    sendCapiEvent("Lead");
-    const num = ["33", "6", "95", "38", "54", "67"].join("");
-    window.open(`https://wa.me/${num}`, "_blank");
-  };
-
   const handleEmail = () => {
-    sendCapiEvent("Lead");
-  };
-
-  const handleInstagram = () => {
     sendCapiEvent("Lead");
   };
 

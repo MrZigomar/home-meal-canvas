@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { sendCapiEvent } from "../utils/capi";
 
 const plans = [
   {
