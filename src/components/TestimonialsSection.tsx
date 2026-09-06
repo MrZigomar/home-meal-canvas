@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Star, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const API_KEY = "AIzaSyCun_7lFqFg00AWXQnh329vPHk-0elNw2o";
-const PLACE_ID = "ChIJ1-nnRsCQlU8R20suJP8O9V4";
 const INITIAL_COUNT = 6;
 
 type GoogleReview = {
@@ -19,10 +17,11 @@ type GoogleReview = {
   };
 };
 
-type PlaceData = {
+type ReviewsFile = {
+  fetchedAt?: string;
+  rating?: number | null;
+  userRatingCount?: number | null;
   reviews?: GoogleReview[];
-  rating?: number;
-  userRatingCount?: number;
 };
 
 const TestimonialsSection = () => {
@@ -34,18 +33,13 @@ const TestimonialsSection = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    fetch(
-      `https://places.googleapis.com/v1/places/${PLACE_ID}?languageCode=fr`,
-      {
-        headers: {
-          "X-Goog-Api-Key": API_KEY,
-          "X-Goog-FieldMask": "reviews,rating,userRatingCount",
-        },
-      }
-    )
+    // Les avis sont maintenant pré-générés une fois par jour par une GitHub Action
+    // (voir .github/workflows/update-reviews.yml) et servis en statique.
+    // Plus d'appel direct à l'API Google depuis le navigateur, plus de clé exposée.
+    fetch("/reviews.json")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json() as Promise<PlaceData>;
+        return res.json() as Promise<ReviewsFile>;
       })
       .then((data) => {
         setReviews(data.reviews ?? []);
@@ -53,7 +47,7 @@ const TestimonialsSection = () => {
         setRatingCount(data.userRatingCount ?? null);
       })
       .catch((err) => {
-        console.error("Erreur Google Places:", err);
+        console.error("Erreur chargement avis:", err);
         setError("Impossible de charger les avis pour le moment.");
       })
       .finally(() => setLoading(false));
