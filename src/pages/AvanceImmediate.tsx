@@ -1,6 +1,13 @@
 import { ArrowRight, CheckCircle2, ExternalLink, Mail } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    gtag?: (...args: (string | Record<string, string>)[]) => void;
+  }
+}
 
 const steps = [
   {
@@ -26,6 +33,15 @@ const steps = [
 ];
 
 const AvanceImmediate = () => {
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag("event", "page_view", {
+        page_title: "Avance immédiate",
+        page_location: window.location.href,
+      });
+    }
+  }, []);
+
   return (
     <>
       <Navbar />
