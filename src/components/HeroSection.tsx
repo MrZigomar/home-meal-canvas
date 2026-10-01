@@ -35,13 +35,13 @@ const HeroSection = () => {
             Découvrir les formules
           </button>
           <a
-            href="https://forms.gle/Q3fgtHx1hjQD2bLN8"
+            href="https://miamissimo.app/annuaire/julien-poivre-sel"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sendCapiEvent("Lead")}
             className="inline-block border border-primary-foreground/50 text-primary-foreground px-8 py-4 font-body text-sm tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors rounded-sm"
           >
-            Me contacter
+            Réserver un créneau
           </a>
         </div>
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8">

@@ -70,7 +70,7 @@ const PricingSection = () => {
                 ))}
               </ul>
               <a
-                href="https://forms.gle/Q3fgtHx1hjQD2bLN8"
+                href="https://miamissimo.app/annuaire/julien-poivre-sel"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => sendCapiEvent("Lead")}
