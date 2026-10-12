@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import AvanceImmediate from "./pages/AvanceImmediate.tsx";
+import ConditionsGeneralesVentes from "./pages/ConditionsGeneralesVentes.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import { useEffect } from "react";
