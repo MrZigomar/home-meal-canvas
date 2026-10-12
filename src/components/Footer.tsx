@@ -23,12 +23,20 @@ const Footer = () => (
       <p className="text-xs tracking-[0.25em] uppercase text-primary-foreground/40 mb-2">
         Infos pratiques
       </p>
-      <a
-        href="/#/avance-immediate"
-        className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4 transition-colors"
-      >
-        L'Avance immédiate de crédit d'impôt
-      </a>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
+        <a
+          href="/#/avance-immediate"
+          className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4 transition-colors"
+        >
+          L'Avance immédiate de crédit d'impôt
+        </a>
+        <a
+          href="/#/conditions-generales-vente"
+          className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4 transition-colors"
+        >
+          Conditions générales de vente
+        </a>
+      </div>
     </nav>
     <p>© {new Date().getFullYear()} Poivre & Sel — Batchcooking à domicile. Tous droits réservés.</p>
   </footer>

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import AvanceImmediate from "./pages/AvanceImmediate.tsx";
+import ConditionsGeneralesVentes from "./pages/ConditionsGeneralesVentes.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import { useEffect } from "react";
@@ -27,6 +28,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/avance-immediate" element={<AvanceImmediate />} />
+            <Route
+              path="/conditions-generales-vente"
+              element={<ConditionsGeneralesVentes />}
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
