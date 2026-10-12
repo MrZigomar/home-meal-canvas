@@ -41,7 +41,7 @@ const groups: Group[] = [
         n: "02",
         title: "Le prestataire",
         paras: [
-          "Poivre et Sel est exploité par [[Nom et prénom du responsable légal]] sous la forme juridique [[forme juridique : micro-entreprise, SASU, autre]] , immatriculé sous le numéro SIRET [[numéro SIRET]] et dont le siège social est situé [[adresse complète du siège social]] .",
+          "Poivre et Sel est exploité par [[Nom et prénom du responsable légal]] sous la forme juridique [[forme juridique : micro-entreprise, SASU, autre]] , immatriculé sous le numéro SIRET [[numéro SIRET]] et dont le siège social est situé [[adresse complète du siège social]].",
           "Contact : julien@poivreetsel.kitchen — site : poivreetsel.kitchen.",
         ],
         bullets: [
@@ -153,7 +153,7 @@ const groups: Group[] = [
         title: "Réclamations et médiation",
         paras: [
           "Toute réclamation doit être adressée dans un premier temps à julien@poivreetsel.kitchen, afin de rechercher une solution amiable.",
-          "En qualité de consommateur, vous pouvez saisir gratuitement le médiateur de la consommation dont relève Poivre et Sel : [[coordonnées et site du médiateur de la consommation]] . La saisine du médiateur est préalable à toute action en justice.",
+          "En qualité de consommateur, vous pouvez saisir gratuitement le médiateur de la consommation dont relève Poivre et Sel : [[coordonnées et site du médiateur de la consommation]]. La saisine du médiateur est préalable à toute action en justice.",
         ],
       },
       {
